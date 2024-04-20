@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  "Poppins", sans-serif;
+}
+
+
+
+header {
+    padding: 20px 30px;
+    box-shadow: 1.5px 1px 6px  rgba(0, 0, 0), 1px 1px 3px  rgba(0, 0, 0);
+    height: 50px;
+    width: 85%;
+    background-color: rgba(230, 158, 23, 0.8);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+header div.logo h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+header div.menu i {
+    margin-top: 13px;
+    font-size: 20px;
+    color: #fff;
+}
+
+header div.menu i:nth-child(2) {
+    display: none;
+}
+
+/* Nav menu start */
+
+#nav_menu {
+    position: absolute;
+    top: 13.4%;
+    left: 2%;
+    background-color: rgba(18, 25, 95, .9);
+    width: 95%;
+    height: 79vh;
+    z-index: 1000;
+    display: none;
+} 
+
+#nav_menu ul {
+    list-style: none;
+}
+
+#nav_menu ul li {
+    margin-bottom: 50px;
+}
+
+#nav_menu ul li a{
+    text-decoration: none;
+    position: relative;
+    left: 44%;
+    top: 80px;
+    font-size: 25px;
+    color: white;
+    
+}
+
+#nav_menu ul:last-child{
+    margin-right: 40px;
+
+}
+
+#nav_menu ul button{
+    position: relative;
+    top: 150px;
+    left: 28%;
+    padding: 15px 60px;
+    font-size: 19px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+/* nav menu ends */
+
+/* Spotlight Start */
+
+#Spotlight {
+    width: 75%;
+    padding: 180px 50px 0 50px;
+    height: 70vh;
+    background-color: aliceblue;
+}
+
+#Spotlight h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+#Spotlight p {
+    margin-bottom: 70px;
+}
+
+#Spotlight a.btn {
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(230, 158, 23);
+    border-radius: 3px;
+    margin-bottom: 60px;
+    transition: 0.5s ease-in-out;
+    
+}
+
+#Spotlight a.btn:hover {
+    background: transparent;
+    color: black;
+    border: 1px solid rgb(230, 158, 23);
+    
+}
+
+#Spotlight ul{
+    display: flex;
+    margin-top: 70px;
+    list-style: none;
+}
+
+#Spotlight ul li {
+    margin-right: 20px;
+    color: rgb(18, 113, 117);
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-size: 21px;
+}
+
+#About {
+    height: 100vh;
+    width: 93%;
+    background-color: rgb(230, 158, 23);
+    padding: 35px 15px;
+}
+
+#About div.top h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    
+}
+
+#About div.top h2 {
+    text-align: center;
+    color: rgb(14, 99, 102);
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+#About div.middle p {
+    width: 292px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 45px;
+    margin-bottom: 70px;
+}
+
+#About ul.bottom{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 3px;
+}
+
+#About ul.bottom li img {
+    height: 180px;
+    width: 180px;
+    border-radius: 6px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+#About ul.bottom li:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+#Tours {
+    
+    width: 90%;
+    padding: 35px 15px;
+    background-color: aliceblue;
+}
+
+#Tours div.top h1 {
+    text-align: center;
+    color: rgb(230, 158, 23);
+    margin-bottom: 30px;
+}
+
+#Tours div.top p {
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+#Tours .scroll {
+    background-color: #4070f4;
+    width: 300px;
+    padding: 20px 19px;
+    border-radius: 13px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 20px;
+    margin-left: 20px;
+}
+
+#Tours .cards {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#Tours  .cards .card {
+    width: 500px;
+    height: 450px;
+    background-color: #ecebeb;
+    margin-right: 20px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    
+}
+
+#Tours  .cards .card img {
+    width: 300px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+#Tours  .cards .card h3 {
+    text-align: center;
+    color: rgb(42, 159, 163);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#Tours .cards .card p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+#Tours .cards .card a.btn {
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(18, 113, 117);
+    border-radius: 3px;
+    margin-left: 90px;
+    transition: .5s ease-in-out;
+}
+
+#Tours .cards .card a.btn:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid rgb(18, 113, 117);
+
+}
+
+#Tours  .cards .card .sub-card {
+    width: 240px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    top: -2%;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0);
+    
+    padding: 10px 30px;
+}
+
+
+
+#Tours  .cards .card i {
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    background-color: rgb(18, 113, 117);
+    padding: 22px 25px;
+    border-radius: 19px 0 0 19px;
+    color: #fff;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0);
+}
+
+
+
+#Gallery{
+    width: 92.6%;
+    height: 100vh;
+    background: rgb(230, 158, 23);
+    padding: 35px 15px;
+    
+}
+
+#Gallery .top h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+#Gallery #img1 .grid{
+    display: flex;
+    margin-bottom: -70px;
+    
+}
+
+#Gallery #img1 .grid img {
+    width: 185px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 19px;
+    transition: 0.7s ease-in-out;
+}
+
+#Gallery #img1 .grid img:hover {
+    transform: scale(1.04);
+}
+
+
+#Gallery #img1 .grid h3{
+    position: relative;
+    bottom: 17%;
+    left: 5px;
+    color: #000000;
+    width: 154px;
+    background: rgb(255, 255, 255);
+    padding: 6px 9px;
+    border-radius: 14px;
+    text-transform: uppercase;
+    border-bottom-right-radius: 20px;
+    font-size: 16px;
+    border: 2px solid rgb(18, 113, 117);
+
+}
+
+#Gallery #img1 .grid i {
+    position: relative;
+    bottom: 32%;
+    left: 69%;
+    color: rgb(18, 113, 117);
+    background: #fff;
+    padding: 13px 16px;
+    border-radius: 50%;
+    border: 2px solid rgb(18, 113, 117);
+    
+}
+
+
+/* img2 */
+
+#Gallery #sec_img {
+    display: none;
+}
+
+#Gallery #sec_img .grid{
+    display: flex;
+    margin-bottom: -70px;
+    
+}
+
+#Gallery #sec_img .grid img {
+    width: 185px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 19px;
+    transition: 0.7s ease-in-out;
+}
+
+#Gallery #sec_img .grid img:hover {
+    transform: scale(1.04);
+}
+
+
+#Gallery #sec_img .grid h3{
+    position: relative;
+    bottom: 17%;
+    left: 5px;
+    color: #000000;
+    width: 154px;
+    background: rgb(255, 255, 255);
+    padding: 6px 9px;
+    border-radius: 14px;
+    text-transform: uppercase;
+    border-bottom-right-radius: 20px;
+    font-size: 16px;
+    border: 2px solid rgb(18, 113, 117);
+
+}
+
+#Gallery #sec_img .grid i {
+    position: relative;
+    bottom: 32%;
+    left: 69%;
+    color: rgb(18, 113, 117);
+    background: #fff;
+    padding: 13px 16px;
+    border-radius: 50%;
+    border: 2px solid rgb(18, 113, 117);
+    
+}
+
+
+
+
+#Gallery #icon1 {
+    position: relative;
+    left: 2%;
+    top: 30px;
+    padding-left: 100px;
+    font-size: 30px;
+    color: #363129;
+}
+
+#Gallery #icon2 {
+    position: relative;
+    left: 2%;
+    top: 30px;
+    padding-left: 100px;
+    font-size: 30px;
+    color: #363129;
+}
+
+
+#contact {
+    height: 130vh;
+    width: 100%;
+    background: rgb(12, 57, 59);
+    border-bottom: 2px solid #fff;
+}
+#contact .top h1 {
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+#contact .top  p {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+#contact .left {
+    padding: 90px 30px;
+}
+
+#contact .left .colm {
+    display: flex;
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+#contact .left .colm:last-child{
+    margin-bottom: 0;
+}
+
+#contact .left .colm:nth-child(2) {
+    margin-bottom: 70px;
+}
+
+#contact .left .colm  i {
+    margin-right: 30px;
+    margin-top: 10px;
+    background: #fff;
+    padding: 13px 15px;
+    height: 20px;
+    color: #000;
+    border-radius: 50%;
+    border: 1px solid rgb(230, 158, 23);
+}
+
+#contact .right {
+   padding-left: 10px;
+}
+
+#contact .right form {
+    background: #fff;
+    width: 330px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#contact .right form h1 {
+    margin-bottom: 40px;
+}
+
+#contact .right form input {
+    display: block;
+    width: 81%;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    transition: 0.6s ease-in-out;
+}
+
+#contact .right form input:hover {
+    padding-left: 35px;
+}
+
+#contact .right form .btn {
+    padding: 10px 30px;
+    background: rgb(22, 138, 142);
+    border: none;
+    outline: none;
+    color: #fff;
+    transition: 0.6s ease-in-out;
+} 
+
+#contact .right form .btn:hover {
+    opacity: 0.7;
+}
+
+footer {
+    height: 60px;
+    width: 83%;
+    padding: 18px 35px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
