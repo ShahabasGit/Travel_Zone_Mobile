@@ -1,0 +1,18 @@
+{
+    "name" : "Travel Zone",
+    "short_name" : "Travel Zone Mobile",
+    "description" : "Ultimate Travel Guide",
+    "start_url" : "/",
+    "display" : "standalone",
+    "background_color" : "#fff",
+    "theme_color" : "#fff",
+    "scope" : "/",
+
+    "icons" : [
+        {
+            "src" : "img/favicon.png",
+            "type" : "images/png",
+            "size" : "192x192"
+        }
+    ]
+}
